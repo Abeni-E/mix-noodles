@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cinzel Decorative", "Cinzel", "Noto Sans Ethiopic", Georgia, serif;
+  --font-cinzel: "Cinzel", "Noto Sans Ethiopic", Georgia, serif;
+  --font-sans: "Marcellus", "Noto Sans Ethiopic", Georgia, serif;
+  --font-sc: "Cormorant SC", "Noto Sans Ethiopic", Georgia, serif;
+  --font-ethiopic: "Noto Sans Ethiopic", "Marcellus", serif;
+
+  --color-charcoal-950: #0c0b0a;
+  --color-charcoal-900: #141210;
+  --color-charcoal-850: #1b1815;
+  --color-charcoal-800: #25201c;
+
+  /* Redder crimson shades */
+  --color-crimson-700: #991b1b;
+  --color-crimson-600: #b91c1c;
+  --color-crimson-500: #dc2626;
+
+  /* Darker warm orange shades */
+  --color-orange-deep: #9a3412;
+  --color-orange-burnt: #c2410c;
+  --color-orange-rich: #ea580c;
+
+  --color-ivory: #f8f5f2;
+  --color-sand-muted: #b5aca3;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #0c0b0a;
+    color: #f8f5f2;
+  }
+
+  html[lang="am"] {
+    font-family: var(--font-ethiopic);
+  }
+
+  h1,
+  h2,
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  h3,
+  .font-cinzel {
+    font-family: var(--font-cinzel);
+  }
+
+  .font-sc {
+    font-family: var(--font-sc);
+  }
+
+  html[lang="am"] h1,
+  html[lang="am"] h2,
+  html[lang="am"] h3,
+  html[lang="am"] .font-display,
+  html[lang="am"] .font-cinzel,
+  html[lang="am"] .font-sc {
+    font-family: "Noto Sans Ethiopic", var(--font-display);
+  }
+
+  :focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+  }
+}
+
+@keyframes reviews-marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.reviews-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: reviews-marquee 36s linear infinite;
+  will-change: transform;
+}
+
+/* Soft dust-away / dust-in fade mask at left and right edges */
+.reviews-dust-mask {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.45) 4%,
+    #000 10%,
+    #000 90%,
+    rgba(0, 0, 0, 0.45) 96%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.45) 4%,
+    #000 10%,
+    #000 90%,
+    rgba(0, 0, 0, 0.45) 96%,
+    transparent 100%
+  );
+}
+
+/* Elegant thin dark-orange scrollbar for Menu category rail */
+.menu-tabs-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #9a3412 #16120f;
+}
+
+.menu-tabs-scroll::-webkit-scrollbar {
+  height: 5px;
+}
+
+.menu-tabs-scroll::-webkit-scrollbar-track {
+  background: #16120f;
+  border-radius: 9999px;
+}
+
+.menu-tabs-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #9a3412, #c2410c);
+  border-radius: 9999px;
+}
+
+.menu-tabs-scroll::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reviews-marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
