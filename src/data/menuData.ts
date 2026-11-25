@@ -54,7 +54,7 @@ export interface SocialLink {
   url: string;
 }
 
-export type GalleryShape = 'square' | 'landscape' | 'portrait' | 'double' | 'circle';
+export type GalleryShape = 'square' | 'landscape' | 'portrait' | 'double';
 
 export interface GalleryPhoto {
   id: string;
@@ -210,11 +210,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Stir Fry Vegetable Noodle',
-      am: 'የአትክልት ስቲር ፍራይ ኑድልስ',
+      am: 'Stir Fry Vegetable Noodle',
     },
     description: {
-      en: 'Freshly homemade stir-fried noodles tossed with crisp seasonal vegetables and savory house soy sauce.',
-      am: 'በቤት የተሰሩ ትኩስ ኑድልስ ከወቅታዊ አትክልቶች እና ከሶያ መረቅ ጋር የተጠበሱ።',
+      en: 'Fresh homemade stir-fried noodles tossed with crisp seasonal vegetables and savory house soy sauce.',
+      am: 'Fresh homemade stir-fried noodles tossed with crisp seasonal vegetables and savory house soy sauce.',
     },
     price: '760 ETB',
     image: '/assets/photos/veg_noodles_top.jpg',
@@ -224,11 +224,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Stir Fry Chicken Noodle',
-      am: 'የዶሮ ስቲር ፍራይ ኑድልስ',
+      am: 'Stir Fry Chicken Noodle',
     },
     description: {
-      en: 'Freshly homemade noodles with marinated chopped chicken breast, egg, fresh vegetables, and house spices.',
-      am: 'በቅመም ከተዘጋጀ የዶሮ ሥጋ፣ ከእንቁላል እና ከትኩስ አትክልቶች ጋር የተጠበሱ ኑድልስ።',
+      en: 'Fresh homemade noodles with marinated chopped chicken breast, egg, fresh vegetables, and house spices.',
+      am: 'Fresh homemade noodles with marinated chopped chicken breast, egg, fresh vegetables, and house spices.',
     },
     price: '990 ETB',
     image: '/assets/photos/stir_fry_closeup.jpg',
@@ -238,11 +238,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Stir Fry Combo Noodle',
-      am: 'ኮምቦ ስቲር ፍራይ ኑድልስ',
+      am: 'Stir Fry Combo Noodle',
     },
     description: {
       en: 'Combo noodles wok-tossed with mixed meats, crisp fresh vegetables, and savory house sauce.',
-      am: 'በተለያዩ ሥጋዎች፣ በትኩስ አትክልቶች እና በልዩ መረቅ የተጠበሰ ኮምቦ ኑድልስ።',
+      am: 'Combo noodles wok-tossed with mixed meats, crisp fresh vegetables, and savory house sauce.',
     },
     price: '995 ETB',
     image: '/assets/photos/combo_noodles_salad.jpg',
@@ -252,11 +252,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Stir Fry Fish Noodle',
-      am: 'የዓሣ ስቲር ፍራይ ኑድልስ',
+      am: 'Stir Fry Fish Noodle',
     },
     description: {
-      en: 'Freshly homemade noodles stir-fried with seasoned fish, crisp vegetables, and aromatic spices.',
-      am: 'በቅመም ከተዘጋጀ ዓሣ እና ከአትክልቶች ጋር የተጠበሱ ትኩስ ኑድልስ።',
+      en: 'Fresh homemade noodles stir-fried with seasoned fish, crisp vegetables, and aromatic spices.',
+      am: 'Fresh homemade noodles stir-fried with seasoned fish, crisp vegetables, and aromatic spices.',
     },
     price: '850 ETB',
     image: '',
@@ -266,11 +266,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Stir Fry Beef Noodle',
-      am: 'የበሬ ሥጋ ስቲር ፍራይ ኑድልስ',
+      am: 'Stir Fry Beef Noodle',
     },
     description: {
-      en: 'Freshly homemade noodles wok-tossed with tender sliced beef, vegetables, and rich soy glaze.',
-      am: 'ለስላሳ የበሬ ሥጋ እና ትኩስ አትክልቶች በሶያ መረቅ የተጠበሱ ኑድልስ።',
+      en: 'Fresh homemade noodles wok-tossed with tender sliced beef, vegetables, and rich soy glaze.',
+      am: 'Fresh homemade noodles wok-tossed with tender sliced beef, vegetables, and rich soy glaze.',
     },
     price: '950 ETB',
     image: '',
@@ -280,11 +280,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Stir Fry Tofu Noodle',
-      am: 'የቶፉ ስቲር ፍራይ ኑድልስ',
+      am: 'Stir Fry Tofu Noodle',
     },
     description: {
-      en: 'Freshly homemade noodles with golden tofu, fresh vegetables, egg or egg-free option, served with chili and soya.',
-      am: 'በቶፉ እና በተለያዩ አትክልቶች (በእንቁላል ወይም ያለ እንቁላል) ከቺሊ እና ሶያ ጋር የተጠበሰ ኑድልስ።',
+      en: 'Fresh homemade noodles with golden tofu, fresh vegetables, egg or egg-free option, served with chili and soy sauce.',
+      am: 'Fresh homemade noodles with golden tofu, fresh vegetables, egg or egg-free option, served with chili and soy sauce.',
     },
     price: '740 ETB',
     image: '',
@@ -294,11 +294,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Fish Sizzling',
-      am: 'ሲዝሊንግ ዓሣ',
+      am: 'Fish Sizzling',
     },
     description: {
       en: 'Marinated fried fish mixed with different fresh vegetables and spices, served on a hot sizzling plate.',
-      am: 'በቅመም የተጠበሰ ዓሣ ከተለያዩ ትኩስ አትክልቶች ጋር በሞቀ የብረት ሳህን የቀረበ።',
+      am: 'Marinated fried fish mixed with different fresh vegetables and spices, served on a hot sizzling plate.',
     },
     price: '960 ETB',
     image: '',
@@ -308,11 +308,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Fried Tofu',
-      am: 'ጥብስ ቶፉ',
+      am: 'Fried Tofu',
     },
     description: {
-      en: 'Deeply fried crispy tofu tossed with special chili sauce and fresh green onion.',
-      am: 'በልዩ የቺሊ መረቅ እና በአረንጓዴ ሽንኩርት የተጠበሰ ቶፉ።',
+      en: 'Deep-fried crispy tofu tossed with special chili sauce and fresh green onion.',
+      am: 'Deep-fried crispy tofu tossed with special chili sauce and fresh green onion.',
     },
     price: '680 ETB',
     image: '',
@@ -322,11 +322,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Beef Sizzling',
-      am: 'ሲዝሊንግ የበሬ ሥጋ',
+      am: 'Beef Sizzling',
     },
     description: {
       en: 'Marinated fried sliced beef mixed with fresh vegetables and spices, served on a hot sizzling plate.',
-      am: 'በቅመም የተጠበሰ የበሬ ሥጋ ከትኩስ አትክልቶች ጋር በሞቀ የብረት ሳህን የቀረበ።',
+      am: 'Marinated fried sliced beef mixed with fresh vegetables and spices, served on a hot sizzling plate.',
     },
     price: '1,190 ETB',
     image: '/assets/photos/beef_sizzling.jpg',
@@ -336,11 +336,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Chicken Sizzling',
-      am: 'ሲዝሊንግ ዶሮ',
+      am: 'Chicken Sizzling',
     },
     description: {
       en: 'Marinated fried sliced chicken breast mixed with fresh vegetables and spices, served on a hot sizzling plate.',
-      am: 'በቅመም የተጠበሰ የዶሮ ሥጋ ከትኩስ አትክልቶች ጋር በሞቀ የብረት ሳህን የቀረበ።',
+      am: 'Marinated fried sliced chicken breast mixed with fresh vegetables and spices, served on a hot sizzling plate.',
     },
     price: '1,340 ETB',
     image: '/assets/photos/chicken_sizzling.jpg',
@@ -350,11 +350,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Fried Corn',
-      am: 'ጥብስ በቆሎ',
+      am: 'Fried Corn',
     },
     description: {
-      en: 'Deep marinated fried corn mixed with dry chili, carrot, and green onion.',
-      am: 'በደረቅ ቺሊ፣ በካሮት እና በአረንጓዴ ሽንኩርት የተጠበሰ ጣፋጭ በቆሎ።',
+      en: 'Marinated deep-fried corn mixed with dry chili, carrot, and green onion.',
+      am: 'Marinated deep-fried corn mixed with dry chili, carrot, and green onion.',
     },
     price: '610 ETB',
     image: '',
@@ -364,11 +364,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Beef Broccoli',
-      am: 'የበሬ ሥጋ እና ብሮኮሊ',
+      am: 'Beef Broccoli',
     },
     description: {
       en: 'Marinated fried sliced beef with broccoli, garlic, ginger, and savory house spice.',
-      am: 'በነጭ ሽንኩርት፣ በዝንጅብል እና በቅመም ከብሮኮሊ ጋር የተጠበሰ የበሬ ሥጋ።',
+      am: 'Marinated fried sliced beef with broccoli, garlic, ginger, and savory house spice.',
     },
     price: '810 ETB',
     image: '',
@@ -378,11 +378,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'mains',
     name: {
       en: 'Broccoli Garlic',
-      am: 'ብሮኮሊ በነጭ ሽንኩርት',
+      am: 'Broccoli Garlic',
     },
     description: {
       en: 'Fresh broccoli florets wok-tossed with aromatic garlic and savory seasoning.',
-      am: 'ትኩስ ብሮኮሊ በነጭ ሽንኩርት እና በቀላል ቅመም የተጠበሰ።',
+      am: 'Fresh broccoli florets wok-tossed with aromatic garlic and savory seasoning.',
     },
     price: '510 ETB',
     image: '',
@@ -395,11 +395,11 @@ export const MENU_ITEMS: MenuItem[] = [
     fasting: true,
     name: {
       en: 'Vegetable Fried Rice',
-      am: 'የአትክልት የተጠበሰ ሩዝ',
+      am: 'Vegetable Fried Rice',
     },
     description: {
-      en: 'Stir-fried steamed rice with fresh vegetables (with or without egg), spices, chili, and soya sauce.',
-      am: 'በተለያዩ ትኩስ አትክልቶች (ያለ እንቁላል የጾም አማራጭ)፣ በቺሊ እና በሶያ መረቅ የተጠበሰ ሩዝ።',
+      en: 'Stir-fried steamed rice with fresh vegetables (with or without egg), spices, chili, and soy sauce.',
+      am: 'Stir-fried steamed rice with fresh vegetables (with or without egg), spices, chili, and soy sauce.',
     },
     price: '690 ETB',
     image: '/assets/photos/veg_fried_rice.jpg',
@@ -409,11 +409,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'chinese',
     name: {
       en: 'Fish Fried Rice',
-      am: 'የዓሣ የተጠበሰ ሩዝ',
+      am: 'Fish Fried Rice',
     },
     description: {
-      en: 'Steamed rice stir-fried with marinated chopped fish, fresh vegetables (egg or egg-free), chili, and soya sauce.',
-      am: 'በቅመም ከተዘጋጀ ዓሣ፣ ከትኩስ አትክልቶች፣ ከቺሊ እና ከሶያ መረቅ ጋር የተጠበሰ ሩዝ።',
+      en: 'Steamed rice stir-fried with marinated chopped fish, fresh vegetables (egg or egg-free), chili, and soy sauce.',
+      am: 'Steamed rice stir-fried with marinated chopped fish, fresh vegetables (egg or egg-free), chili, and soy sauce.',
     },
     price: '780 ETB',
     image: '',
@@ -423,11 +423,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'chinese',
     name: {
       en: 'Chicken Fried Rice',
-      am: 'የዶሮ የተጠበሰ ሩዝ',
+      am: 'Chicken Fried Rice',
     },
     description: {
       en: 'Savory wok-fried rice tossed with seasoned chicken, crisp vegetables, and soy glaze.',
-      am: 'በዶሮ ሥጋ፣ በአትክልቶች እና በሶያ መረቅ የተጠበሰ ጣፋጭ ሩዝ።',
+      am: 'Savory wok-fried rice tossed with seasoned chicken, crisp vegetables, and soy glaze.',
     },
     price: '870 ETB',
     image: '',
@@ -437,11 +437,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'chinese',
     name: {
       en: 'Beef Fried Rice',
-      am: 'የበሬ ሥጋ የተጠበሰ ሩዝ',
+      am: 'Beef Fried Rice',
     },
     description: {
       en: 'Steamed rice wok-fried with tender beef, fresh seasonal vegetables, and house sauce.',
-      am: 'ከበሬ ሥጋ እና ከአትክልቶች ጋር በዎክ የተጠበሰ ሩዝ።',
+      am: 'Steamed rice wok-fried with tender beef, fresh seasonal vegetables, and house sauce.',
     },
     price: '840 ETB',
     image: '',
@@ -451,11 +451,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'chinese',
     name: {
       en: 'Combo Rice',
-      am: 'ኮምቦ የተጠበሰ ሩዝ',
+      am: 'Combo Rice',
     },
     description: {
       en: 'Hearty combo fried rice with mixed meats, crisp vegetables, and signature seasoning.',
-      am: 'በተለያዩ ሥጋዎች እና በአትክልቶች የተዘጋጀ ሙሉ ኮምቦ ሩዝ።',
+      am: 'Hearty combo fried rice with mixed meats, crisp vegetables, and signature seasoning.',
     },
     price: '860 ETB',
     image: '',
@@ -467,11 +467,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'chicken',
     name: {
       en: 'Chicken Lollipop',
-      am: 'ቺክን ሎሊፖፕ',
+      am: 'Chicken Lollipop',
     },
     description: {
       en: 'Crispy spiced chicken lollipops tossed in our savory chili-garlic glaze.',
-      am: 'በልዩ የቺሊ-ነጭ ሽንኩርት መረቅ የተዘጋጀ ቅርፊቱ የሚያምር ጥብስ ዶሮ።',
+      am: 'Crispy spiced chicken lollipops tossed in our savory chili-garlic glaze.',
     },
     price: '1,200 ETB',
     image: '',
@@ -483,11 +483,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'salads',
     name: {
       en: 'Combo Salad',
-      am: 'ኮምቦ ሰላጣ',
+      am: 'Combo Salad',
     },
     description: {
       en: 'Lettuce, cucumber, carrot, white onion, chili, plum tomato, sweet corn, boiled egg, chicken, beef, fish, avocado & house sauce.',
-      am: 'ሰላጣ፣ ኪያር፣ ካሮት፣ ሽንኩርት፣ ቲማቲም፣ በቆሎ፣ እንቁላል፣ ዶሮ፣ በሬ፣ ዓሣ እና የአቮካዶ መረቅ።',
+      am: 'Lettuce, cucumber, carrot, white onion, chili, plum tomato, sweet corn, boiled egg, chicken, beef, fish, avocado & house sauce.',
     },
     price: '910 ETB',
     image: '/assets/photos/combo_salad_bowl.jpg',
@@ -497,11 +497,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'salads',
     name: {
       en: 'Normal Salad',
-      am: 'መደበኛ ሰላጣ',
+      am: 'Normal Salad',
     },
     description: {
       en: 'Fresh lettuce, cucumber, carrot, white onion, chili, plum tomato, sweet corn, avocado sauce, special house sauce, and toasted bread.',
-      am: 'ትኩስ ሰላጣ፣ ኪያር፣ ካሮት፣ ቲማቲም፣ በቆሎ፣ የአቮካዶ መረቅ እና የተጠበሰ ዳቦ።',
+      am: 'Fresh lettuce, cucumber, carrot, white onion, chili, plum tomato, sweet corn, avocado sauce, special house sauce, and toasted bread.',
     },
     price: '460 ETB',
     image: '/assets/photos/tossed_salad.jpg',
@@ -511,11 +511,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'salads',
     name: {
       en: 'Fish Salad',
-      am: 'የዓሣ ሰላጣ',
+      am: 'Fish Salad',
     },
     description: {
       en: 'Lettuce, cucumber, carrot, white onion, chili, plum tomato, sweet corn, fish, avocado sauce, special house sauce, and toasted bread.',
-      am: 'ትኩስ ሰላጣ ከዓሣ፣ ከአትክልቶች፣ ከአቮካዶ እና ከልዩ የቤቱ መረቅ ከተጠበሰ ዳቦ ጋር።',
+      am: 'Lettuce, cucumber, carrot, white onion, chili, plum tomato, sweet corn, fish, avocado sauce, special house sauce, and toasted bread.',
     },
     price: '560 ETB',
     image: '',
@@ -525,11 +525,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'salads',
     name: {
       en: 'Beef Salad',
-      am: 'የበሬ ሥጋ ሰላጣ',
+      am: 'Beef Salad',
     },
     description: {
       en: 'Lettuce, cucumber, carrot, white onion, chili beef, avocado sauce, special house sauce, mayonnaise, and toasted bread.',
-      am: 'ሰላጣ ከተጠበሰ የበሬ ሥጋ፣ ከአትክልቶች፣ ከአቮካዶ መረቅ እና ከተጠበሰ ዳቦ ጋር።',
+      am: 'Lettuce, cucumber, carrot, white onion, chili beef, avocado sauce, special house sauce, mayonnaise, and toasted bread.',
     },
     price: '650 ETB',
     image: '',
@@ -539,11 +539,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'salads',
     name: {
       en: 'Chicken Salad',
-      am: 'የዶሮ ሰላጣ',
+      am: 'Chicken Salad',
     },
     description: {
       en: 'Lettuce, cucumber, carrot, white onion, chili, plum tomato, sweet corn, chicken, avocado sauce, house sauce, mayonnaise, and toasted bread.',
-      am: 'ሰላጣ ከዶሮ ሥጋ፣ ከአትክልቶች፣ ከአቮካዶ መረቅ እና ከተጠበሰ ዳቦ ጋር።',
+      am: 'Lettuce, cucumber, carrot, white onion, chili, plum tomato, sweet corn, chicken, avocado sauce, house sauce, mayonnaise, and toasted bread.',
     },
     price: '860 ETB',
     image: '',
@@ -556,11 +556,11 @@ export const MENU_ITEMS: MenuItem[] = [
     fasting: true,
     name: {
       en: 'Mojito',
-      am: 'ሞሂቶ',
+      am: 'Mojito',
     },
     description: {
       en: 'Classic mojitos, strawberry mojitos, pineapple mojitos, blue lagoon mojitos, espresso mojitos, and cinnamon mojitos.',
-      am: 'ክላሲክ፣ ስትሮውበሪ፣ አናናስ፣ ብሉ ላጉን፣ ኤስፕሬሶ እና ቀረፋ ሞሂቶዎች።',
+      am: 'Classic mojitos, strawberry mojitos, pineapple mojitos, blue lagoon mojitos, espresso mojitos, and cinnamon mojitos.',
     },
     price: '300 ETB',
     image: '/assets/photos/mojito_glasses.jpg',
@@ -570,11 +570,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'shakes-juices',
     name: {
       en: 'Smoothies',
-      am: 'ስሙዚዎች',
+      am: 'Smoothies',
     },
     description: {
       en: 'Mix special, avocado banana, chocolate peanut butter, classic strawberry, peanut banana espresso, and papaya.',
-      am: 'ሚክስ ስፔሻል፣ አቮካዶ ሙዝ፣ ቸኮሌት ኦቾሎኒ፣ ስትሮውበሪ፣ ኦቾሎኒ ሙዝ ኤስፕሬሶ እና ፓፓያ።',
+      am: 'Mix special, avocado banana, chocolate peanut butter, classic strawberry, peanut banana espresso, and papaya.',
     },
     price: '350 ETB',
     image: '/assets/photos/smoothie_cup.jpg',
@@ -586,11 +586,11 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'veg-fruit',
     name: {
       en: 'Mixed Vegetable',
-      am: 'የተቀላቀሉ አትክልቶች',
+      am: 'Mixed Vegetable',
     },
     description: {
       en: 'Different seasonal steamed vegetable mix tossed with fragrant house spices.',
-      am: 'በእንፋሎት የበሰሉ ወቅታዊ አትክልቶች በልዩ ቅመማ ቅመም የተዘጋጁ።',
+      am: 'Different seasonal steamed vegetable mix tossed with fragrant house spices.',
     },
     price: '460 ETB',
     image: '',
@@ -640,7 +640,7 @@ export const POPULAR_TIMES_BY_DAY: DayPopularTimes[] = [
     day: 'monday',
     peakNote: {
       en: 'Peak wait up to 15 min from 8:00 AM – 9:30 AM',
-      am: 'ከጠዋቱ 8:00 – 9:30 እስከ 15 ደቂቃ መጠበቅ ሊኖር ይችላል',
+      am: 'ከ8:00 AM – 9:30 AM እስከ 15 ደቂቃ መጠበቅ ሊኖር ይችላል',
     },
     hours: buildHours([68, 68, 56, 74, 58, 74, 66, 66, 64, 72, 66, 66, 74, 82]),
   },
@@ -648,7 +648,7 @@ export const POPULAR_TIMES_BY_DAY: DayPopularTimes[] = [
     day: 'tuesday',
     peakNote: {
       en: 'Busiest around 7 PM – 9 PM · Usually no wait',
-      am: 'ከምሽቱ 7 – 9 ሰዓት ሞቅ ያለ · ብዙ ጊዜ ወረፋ የለም',
+      am: 'ከ7:00 PM – 9:00 PM ሞቅ ያለ · ብዙ ጊዜ ወረፋ የለም',
     },
     hours: buildHours([28, 62, 48, 60, 70, 76, 60, 42, 52, 66, 66, 66, 80, 94]),
   },
@@ -713,7 +713,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   {
     id: 'gal-stir-fry',
     src: '/assets/photos/stir_fry_closeup.jpg',
-    shape: 'circle',
+    shape: 'square',
     alt: {
       en: 'Glossy stir-fried noodles served alongside sizzling platter',
       am: 'በዎክ የተጠበሱ ኑድልስ ከሲዝሊንግ ምግብ ጋር',
@@ -767,7 +767,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   {
     id: 'gal-smoothies',
     src: '/assets/photos/smoothie_cup.jpg',
-    shape: 'circle',
+    shape: 'landscape',
     alt: {
       en: 'Fresh fruit smoothie served chilled',
       am: 'ቀዝቃዛ የፍራፍሬ ስሙዚ',

@@ -25,7 +25,7 @@ export function MenuPage({ lang, t, onOrderNowClick }: MenuPageProps) {
       {/* FULL-BLEED EDGE-TO-EDGE MENU HEADER BANNER */}
       <section
         aria-labelledby="menu-page-title"
-        className="relative w-full min-h-[340px] sm:min-h-[420px] lg:min-h-[460px] flex items-center overflow-hidden border-b border-[#C2410C]/45 bg-[#12100E]"
+        className="relative w-full min-h-[185px] sm:min-h-[420px] lg:min-h-[460px] flex items-center overflow-hidden border-b border-[#C2410C]/45 bg-[#12100E]"
       >
         <img
           src={MENU_HERO_BACKGROUND_IMAGE}
@@ -39,15 +39,15 @@ export function MenuPage({ lang, t, onOrderNowClick }: MenuPageProps) {
           className="absolute inset-0 bg-gradient-to-r from-[#0C0B0A]/92 via-[#0C0B0A]/76 to-[#0C0B0A]/38"
         />
 
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28 lg:py-32">
+        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-28 lg:py-32">
           <div className="max-w-2xl">
             <h1
               id="menu-page-title"
-              className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#F7EFE7]"
+              className="font-display text-2xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#F7EFE7]"
             >
               {t.menu.pageTitle}
             </h1>
-            <p className="mt-4 text-sm sm:text-base lg:text-lg text-[#DFD5CB] leading-relaxed">
+            <p className="mt-2 sm:mt-4 text-xs sm:text-base lg:text-lg text-[#DFD5CB] leading-relaxed">
               {t.menu.pageSubtitle}
             </p>
           </div>

@@ -154,9 +154,9 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
     },
     home: {
       kicker: 'Homemade Chinese Noodles · Ayertena',
-      headline: 'Fresh Stir-Fried Noodles, Sizzling Plates & Bowls Daily',
+      headline: 'Fresh Noodles & Sizzling Plates Daily',
       tagline:
-        'From wok-tossed homemade noodles and hot sizzling platters to crisp salads and fresh mojitos, Mixed Noodles serves bold flavor right at Ayertena Traffic Light.',
+        'Wok-tossed noodles, sizzling platters, crisp salads, and fresh mojitos at Ayertena Traffic Light.',
       primaryCta: 'Order Now',
       secondaryCta: 'Explore Full Menu',
       visitBannerText: 'Come over today — try our freshly cooked noodles in person',
@@ -283,7 +283,7 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
       emptyCategory: 'No dishes found in this category.',
     },
     visit: {
-      pageTitle: 'Visit Mixed Noodles',
+      pageTitle: 'Visit Mix Noodles',
       pageSubtitle:
         'Check how busy we are by the hour, browse our real kitchen photos, or open Google Maps for turn-by-turn directions to Ayertena.',
       popularTimes: {
@@ -347,103 +347,103 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
   },
 
   am: {
-    brandName: 'ሚክስድ ኑድልስ',
+    brandName: 'Mixed Noodles',
     nav: {
       home: 'መነሻ',
       menu: 'ሜኑ',
       visit: 'ይጎብኙን',
-      orderNow: 'አሁን ይዘዙ',
+      orderNow: 'Order Now',
       languageLabel: 'ቋንቋ ቀይር',
       openMenu: 'ማውጫውን ክፈት',
       closeMenu: 'ማውጫውን ዝጋ',
     },
     home: {
       kicker: 'በቤት የተሰሩ የቻይና ኑድልስ · አየር ጤና',
-      headline: 'በየቀኑ ትኩስ ስቲር ፍራይ ኑድልስ እና ሲዝሊንግ ምግቦች',
+      headline: 'ትኩስ ስቲር ፍራይ ኑድልስ እና ሲዝሊንግ ምግቦች',
       tagline:
-        'በዎክ ከተጠበሱ ኑድልስ እና ትኩስ ሲዝሊንግ ምግቦች እስከ ትኩስ ሰላጣ እና ሞሂቶ ድረስ፤ ሚክስድ ኑድልስ አየር ጤና ትራፊክ መብራት አጠገብ ጣፋጭ ምግቦችን ያቀርባል።',
-      primaryCta: 'አሁን ይዘዙ',
+        'ትኩስ ኑድልስ፣ ሲዝሊንግ ምግቦች፣ ሰላጣ እና ሞሂቶ በMixed Noodles — አየር ጤና ትራፊክ መብራት አጠገብ።',
+      primaryCta: 'Order Now',
       secondaryCta: 'ሙሉ ሜኑን ይመልከቱ',
       visitBannerText: 'ዛሬ ይጎብኙን — ትኩስ የተሰሩ ኑድልሶችን በምግብ ቤታችን ይቅመሱ',
       visitBannerCta: 'ይጎብኙን',
       specialsHeading: 'የእኛ ልዩ ምግቦች',
       specialsSubheading:
-        'ከደንበኞቻችን ተወዳጅ ምርጫዎች — ኮምቦ ስቲር ፍራይ ኑድልስ፣ ቺክን ሎሊፖፕ፣ ኮምቦ ሰላጣ እና ትኩስ ሞሂቶ።',
+        'ከደንበኞቻችን ተወዳጅ ምርጫዎች — Stir Fry Combo Noodle፣ Chicken Lollipop፣ Combo Salad እና Mojito።',
       specialPlaceholderLabel: 'ልዩ ምግብ',
       specialPlaceholderHint: 'ፎቶ እና የምግብ መረጃ በቅርቡ ይገባል',
       viewAllMenu: 'ሙሉ ሜኑን ይመልከቱ',
       socialsHeading: 'ሰዎች በመስመር ላይ ምን እያሉ ነው?',
       socialsSubheading:
-        'የማህበራዊ ገጾቻችንን ይጎብኙ እና ቪዲዮዎቻችንን ላይክ እና ፎሎው ማድረግ እንዳይረሱ።',
+        'የማህበራዊ ሚዲያ ገጾቻችንን ይጎብኙ፤ ቪዲዮዎቻችንን ላይክ እና ፎሎው ማድረግ አይርሱ።',
       followOnLabel: 'ይከታተሉን በ',
-      reviewsHeading: 'አስተያየቶቻችንን ያንብቡ',
+      reviewsHeading: 'የደንበኞቻችንን አስተያየቶች ያንብቡ',
       reviewsSubheading:
-        'የእንግዶቻችን እውነተኛ አስተያየቶች — በካርዶቹ ላይ ይንኩ ወይም የራስዎን አስተያየት ይጨምሩ።',
-      leaveReviewBtn: 'አስተያየት ይስጡ',
+        'የእንግዶቻችን እውነተኛ አስተያየቶች — በካርዶቹ ላይ ይመልከቱ ወይም የራስዎን አስተያየት ይጨምሩ።',
+      leaveReviewBtn: 'Leave a Review',
       reviews: [
         {
           id: 'rev-1',
           name: 'Amanuel Yigzaw',
-          date: 'ከ5 ወራት በፊት',
+          date: '5 months ago',
           rating: 5,
           quote:
-            'ሲዝሊንግ ዓሣው በጣም ጣፋጭ ነበር፤ የደንበኞች አገልግሎታቸውም እጅግ በጣም ጥሩ ነው። እይታውም አስደናቂ ነበር።',
+            'I enjoyed eating sizzling fish, which had a delicious taste, and the customer service was excellent. The view was also breathtaking.',
         },
         {
           id: 'rev-2',
           name: 'Melesse',
-          date: 'ከ4 ሳምንታት በፊት',
+          date: '4 weeks ago',
           rating: 5,
           quote:
-            'ጸጥ ያለ፣ ለመነጋገር ምቹ እና ለ3–4 ሰዎች ተስማሚ ቦታ። ጣፋጭ ኑድልስ በተመጣጣኝ ዋጋ።',
+            'Quiet, easy to talk, and a great spot for 3–4 people. Generous homemade noodles with very fair ETB pricing.',
         },
         {
           id: 'rev-3',
           name: 'Fraol Kuma',
-          date: 'ከ3 ወራት በፊት',
+          date: '3 months ago',
           rating: 5,
           quote:
-            'ለምሳ በጣም ጥሩ ቦታ፤ ከ10 ደቂቃ ባነሰ ጊዜ ፈጣን አገልግሎት፣ ትኩስ ሰላጣዎች እና 5 ኮከብ ድባብ።',
+            'Great lunch spot with quick service under 10 minutes, fresh salads for vegetarian options, and 5-star food and atmosphere.',
         },
         {
           id: 'rev-4',
           name: 'Estifanose Lulseged Legesse',
-          date: 'ከ5 ወራት በፊት',
+          date: '5 months ago',
           rating: 5,
           quote:
-            'ለእራት ምንም ወረፋ አልነበረም! ሲዝሊንግ ምግቦች፣ የተጠበሱ ኑድልስ እና የጾም ምግቦች በስፋት አሉ።',
+            'No wait for dinner! Wonderful sizzling plates, stir-fried noodles, and great vegetarian and fasting food options available.',
         },
         {
           id: 'rev-5',
           name: 'henok abeje',
-          date: 'ከ4 ወራት በፊት',
+          date: '4 months ago',
           rating: 5,
           quote:
-            'በጣም ጣፋጭ ነው! ለምግቡ፣ ለአገልግሎቱ እና ለድባቡ 5 ከ5 — ለጓደኞችና ለቤተሰብ ደስ የሚል ቦታ።',
+            'Nice taste! 5/5 for food, service, and atmosphere—a lively and welcoming dining room for friends and family.',
         },
         {
           id: 'rev-6',
           name: 'Beza Gosaye',
-          date: 'ከ2 ወራት በፊት',
+          date: '2 months ago',
           rating: 5,
           quote:
-            'ትኩስ የአትክልት ስቲር ፍራይ ኑድልስ፣ ኮምቦ ሰላጣ እና ቀዝቃዛ ሞሂቶ — ሁሉም በጣም ጣፋጭ ነበሩ።',
+            'Freshly stir-fried vegetable noodles, crisp combo salad, and refreshing mojitos—everything came out fresh and flavorful.',
         },
         {
           id: 'rev-7',
           name: 'eyader addis',
-          date: 'ከ8 ወራት በፊት',
+          date: '8 months ago',
           rating: 5,
           quote:
-            'በምግባቸው ጣዕም እና በመስተንግዶአቸው በጣም ተደስተናል፤ በድጋሚ ለመምጣት የሚጋብዝ ነው።',
+            'Loved the flavor of the food and the warm hospitality. Easily worth coming back for another round.',
         },
         {
           id: 'rev-8',
           name: 'Tsion Terefe',
-          date: 'ከ6 ወራት በፊት',
+          date: '6 months ago',
           rating: 5,
           quote:
-            'ድንቅ አገልግሎት እና ምርጥ ምግብ!! ንጹህ ቦታ እና አስደሳች መስተንግዶ።',
+            'Great service and great food!! Clean space, attentive staff, and bold flavors from start to finish.',
         },
       ],
     },
@@ -456,39 +456,39 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
       namePlaceholder: 'ለምሳሌ፡ ሜሮን አ.',
       reviewLabel: 'አስተያየትዎ',
       reviewPlaceholder: 'ኑድልሱ፣ ሲዝሊንግ ምግቦቹ እና አገልግሎቱ እንዴት ነበሩ?',
-      submitBtn: 'አስተያየት ይስጡ',
+      submitBtn: 'Leave a Review',
       cancelBtn: 'ተወው',
       closeLabel: 'የአስተያየት ቅጹን ዝጋ',
-      defaultAuthor: 'ደስተኛ ደንበኛ',
-      justNowDate: 'አሁን',
+      defaultAuthor: 'Happy Guest',
+      justNowDate: 'Just now',
       validationError: 'እባክዎ ከመላክዎ በፊት አጭር አስተያየት ይጻፉ።',
     },
     orderModal: {
-      title: 'ሚክስድ ኑድልስን ይዘዙ',
+      title: 'Mixed Noodlesን ይዘዙ',
       subtitle: 'በቀጥታ ይደውሉልን ወይም ከታች ካሉት የአቅርቦት መተግበሪያዎች ይምረጡ።',
       callLabel: 'በቀጥታ ወደ ምግብ ቤቱ ይደውሉ',
-      callSublabel: 'ለመውሰድ ወይም ለፈጣን እርዳታ ያነጋግሩን',
+      callSublabel: 'ለመውሰድ (Pickup) ወይም ለፈጣን እርዳታ ያነጋግሩን',
       closeLabel: 'የማዘዣ አማራጮችን ዝጋ',
     },
     menu: {
-      pageTitle: 'የምግብ ዝርዝር (ሜኑ)',
+      pageTitle: 'The Menu',
       pageSubtitle:
         'በቤት የተሰሩ ስቲር ፍራይ ኑድልስ፣ ሲዝሊንግ ምግቦች፣ የተጠበሰ ሩዝ፣ ትኩስ ሰላጣ እና መጠጦች — ሁሉም ዋጋዎች በብር (ETB)።',
       allCategory: 'ሁሉም ምግቦች',
       fastingLabel: 'የጾም',
       categories: {
-        mains: 'ኑድልስ እና ሲዝሊንግ ምግቦች',
-        chinese: 'የቻይና ምግቦች (ሩዝ)',
-        chicken: 'ዶሮ',
-        salads: 'ሰላጣዎች',
-        'shakes-juices': 'ሼኮች እና ጁሶች',
-        'veg-fruit': 'አትክልት እና ፍራፍሬ',
+        mains: 'Noodles & Sizzling Mains',
+        chinese: 'Chinese Cuisine',
+        chicken: 'Chicken',
+        salads: 'Salads',
+        'shakes-juices': 'Shakes & Juices',
+        'veg-fruit': 'Vegetable & Fruit',
       },
       orderOnAppCta: 'በአቅርቦት ይዘዙ',
       emptyCategory: 'በዚህ ምድብ ውስጥ ምንም ምግብ አልተገኘም።',
     },
     visit: {
-      pageTitle: 'ሚክስድ ኑድልስን ይጎብኙ',
+      pageTitle: 'Mix Noodlesን ይጎብኙ',
       pageSubtitle:
         'በየሰዓቱ ያለውን የሰው ብዛት ይመልከቱ፣ የምግብ ቤታችንን ፎቶዎች ይጎብኙ ወይም ወደ አየር ጤና አቅጣጫ ያግኙ።',
       popularTimes: {
@@ -507,7 +507,7 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
           saturday: 'ቅዳሜ',
         },
         statusClosed:
-          'አሁን ዝግ ነን — ምግብ ቤቱ በየቀኑ ከጠዋቱ 7:00 AM ይከፈታል (አቅርቦት 9:00 AM – 8:30 PM)።',
+          'አሁን ዝግ ነን — ምግብ ቤቱ በየቀኑ ከ7:00 AM ይከፈታል (አቅርቦት 9:00 AM – 8:30 PM)።',
         statusEmpty: 'አሁን ቦታው ባዶ እና ጸጥ ያለ ነው — ያለምንም ወረፋ መምጣት ይችላሉ!',
         statusKindOfBusy: 'አሁን ቀላል እንቅስቃሴ አለ — በቂ ወንበሮች አሉ፣ ወረፋ የለም።',
         statusIntermediate: 'አሁን መካከለኛ እንቅስቃሴ አለ — ደስ የሚል ድባብ፣ ወረፋ የለም ማለት ይቻላል።',
@@ -520,7 +520,7 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
       addressValue: 'XMMX+33W አየር ጤና፣ አዲስ አበባ፣ ኢትዮጵያ',
       plusCode: 'XMMX+33W',
       neighborhoodNote: 'አየር ጤና ትራፊክ መብራት አጠገብ በቀላሉ ይገኛል',
-      directionsCta: 'በGoogle Maps ክፈት',
+      directionsCta: 'በGoogle Maps ይክፈቱ',
       phoneLabel: 'ስልክ',
       phoneValue: '098 199 9955',
       hoursHeading: 'የሥራ ሰዓታት',
@@ -535,16 +535,16 @@ export const TRANSLATIONS: Record<Language, TranslationContent> = {
       nextPhoto: 'ቀጣይ ፎቶ',
     },
     orderSection: {
-      buttonPrefix: 'ይዘዙ በ',
+      buttonPrefix: 'Order on',
     },
     footer: {
       tagline:
-        'በየቀኑ በትኩሱ የሚዘጋጁ ስቲር ፍራይ ኑድልስ፣ ሲዝሊንግ ምግቦች፣ የተጠበሰ ሩዝ እና መጠጦች አየር ጤና።',
-      quickLinksHeading: 'ገጾች',
-      hoursHeading: 'ሰዓታት እና አድራሻ',
-      hoursSummary: 'በየቀኑ 7:00 AM – 9:00 PM · አቅርቦት 9:00 AM – 8:30 PM',
-      deliveryHeading: 'ለማዘዝ',
-      copyright: '© 2026 ሚክስድ ኑድልስ (Mixed Noodles). መብቱ በህግ የተጠበቀ ነው።',
+        'Homemade stir-fried noodles, sizzling platters, Chinese fried rice, and fresh drinks at Ayertena Traffic Light.',
+      quickLinksHeading: 'Explore',
+      hoursHeading: 'Hours & Location',
+      hoursSummary: 'Dine-In Daily 7:00 AM – 9:00 PM · Delivery 9:00 AM – 8:30 PM',
+      deliveryHeading: 'Order Delivery',
+      copyright: '© 2026 Mixed Noodles. All rights reserved.',
     },
   },
 };

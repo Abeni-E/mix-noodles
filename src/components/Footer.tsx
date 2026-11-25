@@ -2,17 +2,17 @@ import React from 'react';
 import { MixLogo } from './BrandMotifs';
 import { OrderNowSection } from './OrderNowSection';
 import { PageRoute } from './Header';
-import { Language, TranslationContent } from '../data/translations';
+import { TRANSLATIONS } from '../data/translations';
 
 interface FooterProps {
-  lang: Language;
-  t: TranslationContent;
   onNavigate: (page: PageRoute) => void;
 }
 
-export function Footer({ lang, t, onNavigate }: FooterProps) {
+export function Footer({ onNavigate }: FooterProps) {
+  const t = TRANSLATIONS.en;
+
   return (
-    <footer className="border-t border-white/15 bg-[#110F0D] mt-16">
+    <footer lang="en" className="border-t border-white/15 bg-[#110F0D] mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-14">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           {/* Left Column: Hours & Location + Order Delivery Apps */}
@@ -37,7 +37,7 @@ export function Footer({ lang, t, onNavigate }: FooterProps) {
               <h3 className="font-cinzel text-sm font-bold tracking-wide text-[#EF4444] mb-3">
                 {t.footer.deliveryHeading}
               </h3>
-              <OrderNowSection lang={lang} t={t} variant="compact" />
+              <OrderNowSection lang="en" t={t} variant="compact" />
             </div>
           </div>
 

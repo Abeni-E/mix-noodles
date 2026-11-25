@@ -37,7 +37,7 @@ export function Header({
 
   return (
     <header className="sticky top-0 z-40 bg-[#0C0B0A]/95 backdrop-blur-md border-b border-white/15">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4 sm:gap-8">
+      <div className="max-w-6xl mx-auto px-3 sm:px-6 h-12 md:h-16 flex items-center justify-between gap-2 sm:gap-8">
         {/* Zone 1: Brand Logo + Single-Line Wordmark */}
         <a
           href="#/"
@@ -86,7 +86,7 @@ export function Header({
         </nav>
 
         {/* Zone 3: Language Toggle (EN | አማ) + Primary "Order Now" CTA */}
-        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
           <div
             role="group"
             aria-label={t.nav.languageLabel}
@@ -96,7 +96,7 @@ export function Header({
               type="button"
               onClick={() => onToggleLanguage('en')}
               aria-pressed={lang === 'en'}
-              className={`px-2.5 py-1.5 min-h-[34px] text-xs font-semibold rounded-md transition-colors whitespace-nowrap shrink-0 cursor-pointer ${
+              className={`px-2 md:px-2.5 py-1 md:py-1.5 min-h-[26px] md:min-h-[34px] text-[11px] md:text-xs font-semibold rounded-md transition-colors whitespace-nowrap shrink-0 cursor-pointer ${
                 lang === 'en'
                   ? 'bg-[#C2410C] text-[#FFF7ED]'
                   : 'text-[#C7B7A6] hover:text-[#FB923C]'
@@ -108,7 +108,7 @@ export function Header({
               type="button"
               onClick={() => onToggleLanguage('am')}
               aria-pressed={lang === 'am'}
-              className={`px-2.5 py-1.5 min-h-[34px] text-xs font-semibold rounded-md transition-colors whitespace-nowrap shrink-0 font-[Noto_Sans_Ethiopic] cursor-pointer ${
+              className={`px-2 md:px-2.5 py-1 md:py-1.5 min-h-[26px] md:min-h-[34px] text-[11px] md:text-xs font-semibold rounded-md transition-colors whitespace-nowrap shrink-0 font-[Noto_Sans_Ethiopic] cursor-pointer ${
                 lang === 'am'
                   ? 'bg-[#C2410C] text-[#FFF7ED]'
                   : 'text-[#C7B7A6] hover:text-[#FB923C]'
@@ -124,7 +124,7 @@ export function Header({
               setMobileMenuOpen(false);
               onOrderNowClick();
             }}
-            className="px-3.5 sm:px-4 py-2 min-h-[40px] rounded-lg bg-[#DC2626] hover:bg-[#991B1B] text-[#FFF5F5] text-xs sm:text-sm font-semibold transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+            className="px-2.5 sm:px-4 py-1 md:py-2 min-h-[30px] md:min-h-[40px] rounded-lg bg-[#DC2626] hover:bg-[#991B1B] text-[#FFF5F5] text-[11px] sm:text-sm font-semibold transition-colors whitespace-nowrap shrink-0 cursor-pointer"
           >
             {t.nav.orderNow}
           </button>
@@ -134,9 +134,9 @@ export function Header({
             onClick={() => setMobileMenuOpen((prev) => !prev)}
             aria-expanded={mobileMenuOpen}
             aria-label={mobileMenuOpen ? t.nav.closeMenu : t.nav.openMenu}
-            className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg bg-[#161412] border border-white/15 text-[#EA580C] hover:border-[#C2410C] transition-colors shrink-0"
+            className="md:hidden inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[#161412] border border-white/15 text-[#EA580C] hover:border-[#C2410C] transition-colors shrink-0"
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <MenuIcon className="w-5 h-5" />}
+            {mobileMenuOpen ? <X className="w-4 h-4" /> : <MenuIcon className="w-4 h-4" />}
           </button>
         </div>
       </div>

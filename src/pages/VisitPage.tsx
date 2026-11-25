@@ -42,29 +42,33 @@ const GOOGLE_MAPS_EMBED_URL =
 
 const GALLERY_SHAPE_CLASSES: Record<
   GalleryShape,
-  { wrapper: string; aspect: string; imgRound?: string }
+  { wrapper: string; aspect: string }
 > = {
   double: {
-    wrapper: 'sm:col-span-2 rounded-2xl',
-    aspect: 'aspect-[16/9]',
+    wrapper: 'rounded-lg sm:rounded-2xl sm:col-span-2',
+    aspect: 'aspect-square sm:aspect-[16/9]',
   },
   landscape: {
-    wrapper: 'rounded-2xl',
-    aspect: 'aspect-[16/10]',
+    wrapper: 'rounded-lg sm:rounded-2xl',
+    aspect: 'aspect-square sm:aspect-[16/10]',
   },
   square: {
-    wrapper: 'rounded-2xl',
+    wrapper: 'rounded-lg sm:rounded-2xl',
     aspect: 'aspect-square',
   },
   portrait: {
-    wrapper: 'rounded-2xl',
-    aspect: 'aspect-[3/4]',
-  },
-  circle: {
-    wrapper: 'rounded-full max-w-[290px] w-full mx-auto',
-    aspect: 'aspect-square',
+    wrapper: 'rounded-lg sm:rounded-2xl',
+    aspect: 'aspect-square sm:aspect-[3/4]',
   },
 };
+
+function formatHour12(hour24: number): string {
+  const normalized = ((hour24 % 24) + 24) % 24;
+  if (normalized === 0) return '12 AM';
+  if (normalized === 12) return '12 PM';
+  if (normalized < 12) return `${normalized} AM`;
+  return `${normalized - 12} PM`;
+}
 
 export function VisitPage({ lang, t }: VisitPageProps) {
   const now = new Date();
@@ -161,7 +165,7 @@ export function VisitPage({ lang, t }: VisitPageProps) {
       {/* 1. FULL-BLEED EDGE-TO-EDGE "VISIT MIX NOODLES" BANNER */}
       <section
         aria-labelledby="visit-page-title"
-        className="relative w-full min-h-[340px] sm:min-h-[420px] lg:min-h-[460px] flex items-center overflow-hidden border-b border-[#C2410C]/45 bg-[#12100E]"
+        className="relative w-full min-h-[185px] sm:min-h-[420px] lg:min-h-[460px] flex items-center overflow-hidden border-b border-[#C2410C]/45 bg-[#12100E]"
       >
         <img
           src={VISIT_HERO_BACKGROUND_IMAGE}
@@ -175,15 +179,15 @@ export function VisitPage({ lang, t }: VisitPageProps) {
           className="absolute inset-0 bg-gradient-to-r from-[#0C0B0A]/92 via-[#0C0B0A]/76 to-[#0C0B0A]/38"
         />
 
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28 lg:py-32">
+        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-28 lg:py-32">
           <div className="max-w-2xl">
             <h1
               id="visit-page-title"
-              className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#FAF3EB]"
+              className="font-display text-2xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#FAF3EB]"
             >
               {t.visit.pageTitle}
             </h1>
-            <p className="mt-4 text-sm sm:text-base lg:text-lg text-[#DFD5CB] leading-relaxed">
+            <p className="mt-2 sm:mt-4 text-xs sm:text-base lg:text-lg text-[#DFD5CB] leading-relaxed">
               {t.visit.pageSubtitle}
             </p>
           </div>
@@ -311,7 +315,7 @@ export function VisitPage({ lang, t }: VisitPageProps) {
               <span>
                 {t.visit.popularTimes.selectedHourLabel}{' '}
                 <strong className="text-[#EA580C] tabular-nums">
-                  {matchedHourEntry ? matchedHourEntry.label : `${activeHour24}:00`}
+                  {matchedHourEntry ? matchedHourEntry.label : formatHour12(activeHour24)}
                 </strong>
               </span>
 
@@ -447,7 +451,7 @@ export function VisitPage({ lang, t }: VisitPageProps) {
             <p className="mt-1.5 text-sm text-[#C7B7A6]">{t.visit.gallerySubheading}</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 grid-flow-dense items-center">
+          <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-5 grid-flow-dense items-center">
             {GALLERY_PHOTOS.map((photo, index) => {
               const shapeStyle = GALLERY_SHAPE_CLASSES[photo.shape];
               return (

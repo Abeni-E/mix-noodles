@@ -108,7 +108,7 @@ export default function App() {
         {currentPage === 'visit' && <VisitPage lang={lang} t={t} />}
       </main>
 
-      <Footer lang={lang} t={t} onNavigate={navigateTo} />
+      <Footer onNavigate={navigateTo} />
 
       {/* Navbar & Hero "Order Now" Pop-up Modal */}
       <OrderModal

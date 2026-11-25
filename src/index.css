@@ -54,11 +54,29 @@
 
   html[lang="am"] h1,
   html[lang="am"] h2,
-  html[lang="am"] h3,
-  html[lang="am"] .font-display,
-  html[lang="am"] .font-cinzel,
-  html[lang="am"] .font-sc {
+  html[lang="am"] .font-display {
     font-family: "Noto Sans Ethiopic", var(--font-display);
+  }
+
+  html[lang="am"] h3,
+  html[lang="am"] .font-cinzel {
+    font-family: "Noto Sans Ethiopic", var(--font-cinzel);
+  }
+
+  html[lang="am"] .font-sc {
+    font-family: "Noto Sans Ethiopic", var(--font-sc);
+  }
+
+  html[lang="am"] [lang="en"] {
+    font-family: var(--font-sans);
+  }
+
+  html[lang="am"] [lang="en"] .font-cinzel {
+    font-family: var(--font-cinzel);
+  }
+
+  html[lang="am"] [lang="en"] .font-sc {
+    font-family: var(--font-sc);
   }
 
   :focus-visible {

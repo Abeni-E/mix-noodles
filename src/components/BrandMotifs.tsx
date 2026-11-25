@@ -15,7 +15,7 @@ export function MixLogo({ brandName, compact = false }: MixLogoProps) {
         src="/assets/aistudio/image_9b040b2a.png"
         alt={brandName}
         className={`w-auto object-contain select-none mix-blend-lighten brightness-[0.95] contrast-[1.12] ${
-          compact ? 'h-12 sm:h-14' : 'h-11 sm:h-12'
+          compact ? 'h-12 sm:h-14' : 'h-8 sm:h-10 md:h-12'
         }`}
       />
     </span>
